@@ -1,0 +1,29 @@
+help
+help     me
+
+set x 0
+   set   x  1 
+set y 2
+set 
+set z 2 3
+
+print x
+   print  y    
+print z
+print
+
+run script1.txt
+   run  wrongfile.txt
+run
+run script1.txt script2.txt
+
+exec script1.txt
+  exec script1.txt      script2.txt 
+exec script1.txt script2.txt script3.txt
+exec script1.txt script1.txt
+exec 
+exec script1.txt script2.txt script3.txt script3.txt 
+   
+someWrongCommand
+quit please
+quit
