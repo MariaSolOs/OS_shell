@@ -4,6 +4,7 @@ comments into sections (according to which file they refer to).
 
 ### GENERAL
 1. Header files are included for all C files.
+2. For more information please look at the comments I included in each file.
 3. I include a nice makefile to compile this project. Make sure all C files and header 
 files are in the same directory.
 4. You'll obtain error messages when you run my testfile. This is exactly what I want,
@@ -43,10 +44,6 @@ I remove the program from the queue.
 3. Note that when a program terminates, I also add all the frames it was using to the
 available frames queue. This helps to avoid the search for victim frames.
 
-### RAM.C 
-1. I added the extra function resetRam to set RAM cells to NULL when needed.
-2. My queue of frames implementation is in this file.
-
 ### CPU.C 
 1. runInCPU is the public function called by kernel.c. The run function coded
 inside cpu.c remains static (only accessible within this file). 
@@ -55,6 +52,6 @@ also use it as a "mutex" in runInCPU.
 
 ### MEMORYMANAGER.C 
 1. In order to keep track of which PCB is using which frame, I have the array of PCB
-pointers usingFrames.
+pointers called usingFrames.
 
 Finally, please appreciate my kernel. I put a lot of effort into it and I'm kind of proud <3
